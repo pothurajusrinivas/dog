@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:bisque;
+            text-align:center;
+        }
+        p{
+            color:darkblue;
+            font-size:20px;
+        }
+        h4{
+            font-size:30px;
+            font-family:verdana, Geneva, Tahomo, sans-serif;
+        }
+        </style>
+</head>
+<body>
+    <p> I'm using a paragraph </p>
+    <h4> I'm using heading </h4>
+    <p id="demo"> Using paragraph to explain DOM manipulation</p>
+    <div class="container">
+        <h2>Using H2 to expalin  DOM manipulation</h2> 
+    </div>
+    <h5> I'm using  h5  heading </h5>
+    <h5> I'm using  h5 heading </h5>
+    <script>
+        document.write("writing html content using javascript")
+        console.log("hello world")
+        document.getElementById("demo").innerHTML=("Writing paragrph manipulaytion methods");
+        let x=document.getElementsByClassName("container");
+        x[0].innerHTML=("insted of this ")
+
+        let y=document.getElementByTagName("h4");
+        y[0].innerHTML="I am using javascript to manipulate tags"
+
+
+        let z=document.getElementByTagName("h5");
+        z[0].innerHTML="Changing content for undersatanding";
+
+        </script>
+</body>
+</html>

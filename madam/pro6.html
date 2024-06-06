@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> NEW JAVASCRIPT CLASS</title>
+        <style>
+            body{
+                background-color:bisque ;
+                text-align:center;
+            }
+            p{
+                color:darkblue;
+                font-size:20px;
+            }
+            h4{
+                font-size:30px;
+                font-family:verdana, Geneva, Tahoma, sans-serif;
+            }
+            </style>
+            </head>
+            <body>
+                <p> I'm using paragraph</p>
+                <h4> I'm using heading</h4>
+                <p id="demo">Using paragraph to explain DOM manipulation</p>
+                <div  class="container">
+                    <h2>Using H2 to explain manupulation class</h2>
+                    <h1>Using H2 to explain  class</h1>
+                </div>
+                <script>
+                    document.write("writing HTML CONTENT USING JAVASCRIPT")
+                    console.log("hello world")
+                    document.getElementById("demo").innerHTML="Using paragraph to explain"
+                    let elements = document.getElementsByClassName("container");
+                    elements[0].innerHTML = "Using HI HI HI HI HI HI";
+
+                    </script>
+                </body>
+                </html>
